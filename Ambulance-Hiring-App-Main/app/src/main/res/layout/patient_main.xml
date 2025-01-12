@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Emergen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+
+        >
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/ddm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ntime"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            tools:context=".PatientmainActivity">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Select Ambulance">
+
+                <AutoCompleteTextView
+                    android:id="@+id/nambu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:textColorHint="#0B0303" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <TextView
+
+            android:id="@+id/DRegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="BOOK AMBULACE HERE"
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="#13DCC4"
+            android:textColorHint="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/npname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DRegi"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#31090000"
+            android:drawableLeft="@drawable/id"
+            android:drawablePadding="20dp"
+            android:hint="Patient Name"
+            android:padding="20dp"
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="#13DCC4"
+            android:textColorHint="#000000" />
+
+
+        <EditText
+            android:id="@+id/npickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/npname"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#31090000"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="20dp"
+            android:hint="Pick Up from"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="#13DCC4"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/ndrop"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/npickup"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="#31090000"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="20dp"
+            android:hint="Drop At"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="#13DCC4"
+            android:textColorHint="#000000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/conambu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ddm"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#EF0909"
+            android:text="BOOK"
+            android:textColor="#020202" />
+
+        <EditText
+            android:id="@+id/ndate"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ndrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="#31090000"
+            android:drawableLeft="@drawable/age"
+            android:drawablePadding="20dp"
+            android:hint="Select Pickup Date"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="#13DCC4"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/ntime"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ndate"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="#31090000"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="20dp"
+            android:hint="Select Pickup Time"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="#13DCC4"
+            android:textColorHint="#000000" />
+
+        <ProgressBar
+            android:id="@+id/npb"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="125dp"
+            android:layout_height="111dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="308dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patientlog"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:id="@+id/DRegi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Pickup Patient"
+        android:textColor="#0E0E0E"
+        android:textColorHighlight="#13DCC4"
+        android:textColorHint="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="378dp"
+        android:layout_height="325dp"
+        android:layout_below="@+id/DRegi3"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="#D1CBDBD0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/callpatient"
+                android:layout_width="235dp"
+                android:layout_height="72dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginBottom="197dp"
+                android:backgroundTint="#E71313"
+                android:text="Call Patient"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cnpa"
+                android:layout_width="234dp"
+                android:layout_height="84dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="73dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginBottom="49dp"
+                android:backgroundTint="#E71313"
+                android:text="Pickup Patient"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
